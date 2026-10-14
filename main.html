@@ -9,18 +9,10 @@
 <body>
 <p id="status">Enter the Metaverse</p>
 
-<button onclick="insertHeading()">Enter</button>
-
-<script>
-  function insertHeading() {
-    const p = document.getElementById("status");
-    const h1 = document.createElement("h1");
-
-    h1.textContent = "Entered Metaverse";
-    p.appendChild(h1);
-  }
-</script>
-
+<button id="enterBtn"
+    onclick="document.getElementById('status').outerHTML = '<h1 id=\'status\'>Entered Metaverse</h1>'">
+    Enter
+</button>
 </body>
 
 </html>
